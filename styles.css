@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    font-family: 'Montserrat Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+.travel-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(65, 176, 219);
+    font-size: 50px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+.position-relative img {
+    width: 100%;
+    position: relative;
+
+}
+
+.position-absolute {
+    position: absolute;
+    top: 630px;
+    left: 39%;
+    font-size: 50px;
+    color: rgb(207, 179, 19);
+}
+
+.capitals {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: rgb(238, 248, 248);
+    padding: 50px;
+
+}
+
+.capitals>div {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+    flex-direction: row;
+    height: 85px;
+}
+
+.capitals img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+
+.capitals div div:last-child {
+    display: inline-block;
+    width: 150px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    text-align: center;
+    border: 10px solid white;
+}
+
+
+#circleText {
+    text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 10px;
+    flex-direction: row;
+    height: 100px;
+}
+
+.circle {
+
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+
+#circle2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    clip-path: circle(50%);
+    background-color: blueviolet;
+}
+
+
+#behindCircle {
+    position: relative;
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    opacity: 0;
+}
+
+#circle2:hover {
+    visibility: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background: red;
+    position: sticky;
+    top: 0;
+    color: rgb(20, 20, 20);
+    background-color: rgb(65, 176, 219);
+    z-index: 1;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+nav {
+    position: relative;
+    text-decoration: none !important;
+    font-size: 30px;
+    color: red;
+    padding: 20px;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: gray;
+    font-weight: bold;
+}
+
+nav a:active {
+    color: red;
+}
